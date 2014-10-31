@@ -1,10 +1,58 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Coming Soon...</title>
+<link href="css/fatc-style.css" rel="stylesheet" type="text/css" />
+<link href="css/calendar.css" rel="stylesheet" type="text/css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Let's fly around the code...</title>
 </head>
 <body>
-	<h4>Coming Soon...</h4>
+	<div id="top_header">
+		<div id="logobar">
+			<a href="index.html"><img src="images/logo.png" border="0" /></a>
+			<div id="topHeader_lnks">Welcome Hungry Coders... :)
+			</div>
+		</div>
+		<div id="menubar">
+			<div class="main">
+				<ul>
+					<li><a id="m1a" class="alink active">Angular Calendar Component</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="content_colum">
+		<div id="centercol">
+			<div class="furcnt_div">
+				<h2>Calendar Component</h2>
+				<div class="content_header">
+					<h2>Let's kick off new angular calendar component</h2>
+					<div id="box_area" ng-app="calendarApp">
+						<div ng-controller="calendarController">
+							<div class="calendar" predefined-ranges="{{predefinedRanges}}"
+								time-range-object="{{calTimeRange}}" no-of-cal="2"
+								ui-classes="{{uiClasses}}" button-object="{{buttonObject}}"
+								visible-date-format="MM/DD/YYYY" append="{{localeObject}}"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footermain">
+		<div class="copyright">&copy;2014 flyaroundthecode team</div>
+		<!-- <div id="footerlnk">
+			<a href="#"> Terms</a><span></span><a href="#">Privacy &amp; Cookies</a>
+		</div> -->
+	</div>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.3/moment.min.js"></script>
+	<script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.0/angular.min.js"></script>
+	<!-- <script type="text/javascript" src="js/lib/jquery-2.1.0.js"></script>
+	<script type="text/javascript" src="js/lib/moment-with-locales.js"></script>
+	<script type="text/javascript" src="js/lib/angular.js"></script> -->
+	<script type="text/javascript" src="js/app/app.js"></script>
+	<script type="text/javascript" src="js/app/controllers/calendarController.js"></script>
+	<script type="text/javascript" src="js/app/directives/calendar.js"></script>
 </body>
 </html>
