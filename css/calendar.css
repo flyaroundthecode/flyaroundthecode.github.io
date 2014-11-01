@@ -63,6 +63,10 @@
 	display: table-cell;
 }
 
+.cal-table thead tr th{
+	text-align: center;
+}
+
 .cal-cell {
 	color: #92989b;
 	font-family: Arial;

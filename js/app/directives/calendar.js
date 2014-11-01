@@ -42,7 +42,7 @@ app.directive('calendar',function($parse, $timeout){
                     }
                 }
             };
-            var startDayOfWeek = 4;
+            var startDayOfWeek = 1;
             var diff;
             var date;
             var lastSelectedDaysEle = element.find('.last-days-text');

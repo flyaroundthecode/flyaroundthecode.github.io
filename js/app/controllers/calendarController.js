@@ -2,7 +2,7 @@
 app.controller('calendarController', function($scope) {
 	$scope.calTimeRange = {
 		'timeRange' : [ 1412533800000, 1413311400000 ],
-		'maxTimeRange' : [ (moment().unix() * 1e3 - 864e5), 1419964200000 ]
+		'maxTimeRange' : [ 1356978600000, 1425061800000 ]
 	};
 	$scope.timeSpanOption = 'monthly';
 	$scope.dates4 = {
