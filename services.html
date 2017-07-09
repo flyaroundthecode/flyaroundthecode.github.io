@@ -30,41 +30,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		 new WOW().init();
 		</script>
 <!-- animated-css -->
-<script src="js/modernizr.js"></script>
-<script>
-    $(document).ready(function(){
-        if (Modernizr.touch) {
-            // show the close overlay button
-            $(".close-overlay").removeClass("hidden");
-            // handle the adding of hover class when clicked
-            $(".branch-gd").click(function(e){
-                if (!$(this).hasClass("hover")) {
-                    $(this).addClass("hover");
-                }
-            });
-            // handle the closing of the overlay
-            $(".close-overlay").click(function(e){
-                e.preventDefault();
-                e.stopPropagation();
-                if ($(this).closest(".branch-gd").hasClass("hover")) {
-                    $(this).closest(".branch-gd").removeClass("hover");
-                }
-            });
-        } else {
-            // handle the mouseenter functionality
-            $(".branch-gd").mouseenter(function(){
-                $(this).addClass("hover");
-            })
-            // handle the mouseleave functionality
-            .mouseleave(function(){
-                $(this).removeClass("hover");
-            });
-        }
-    });
-</script>
 <script src="js/bootstrap.min.js"></script>
-
-
 </head>
 <body>
 <!--header-top start here-->
@@ -106,19 +72,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			                <span class="icon-bar"></span>
 			              </button>
 			              <div class="logo wow slideInLeft" data-wow-delay="0.3s">
-			                    <a class="navbar-brand" href="index.html"><h2>Hotel Bhavesh Farm<h2></a>
+			                    <a class="navbar-brand" href="index.html"><h2>Hotel Bhavesh Farm</h2></a>
 			              </div>
 			          </div>
 		            <div id="navbar" class="navbar-collapse collapse">
 		            <nav class="cl-effect-16" id="cl-effect-16">
 		              <ul class="nav navbar-nav">
-		               <li><a class="active" href="index.html" data-hover="Home">Home</a></li>
+		               <li><a href="index.html" data-hover="Home">Home</a></li>
 		                <li><a href="about.html" data-hover="About">About</a></li>
 						<li><a href="services.html" data-hover="Services">Services</a></li>
 						<li><a href="gallery.html" data-hover="Gallery">Gallery</a></li>
 						<li><a href="sightseen.html" data-hover="Sight Seeing">Sight Seeing</a></li>
-						<li><a href="contact.html" data-hover="Contact">Contact</a></li>
-					  </ul>
+						<li><a href="contact.html" data-hover="Contact">Contact</a></li>						
+		              </ul>
 		            </nav>
 
 		            </div>
@@ -130,121 +96,91 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	 </div>
 </div>
 <!--header end here-->
-<!--banner  start hwew-->
-<div class="banner">
+<!--services strat here-->
+<div class="services">
 	<div class="container">
-		<div class="banner-main wow zoomIn" data-wow-delay="0.3s">
-			<h2>Hotel Bhavesh Farm & Restaurant</h2>
-			<h6>Welcome To Our Hotel</h6>
-		</div>
-    </div>
-</div>
-<!--BANNER END HERE-->
-<!--information start here-->
-<div class="information">
-	<div class="container">
-		<div class="information-main">
-			  <div class="information-grid five-star wow slideInLeft" data-wow-delay="0.3s">
-			  	<div class="col-md-4 hotel-info">
-			  		<div class="info-left">
-			  			<img src="images/s1.png" alt="">
-			  		</div>
-			  		<div class="info-right">
-			  			<h4>Star Hotel</h4>
-			  			<p>A high class hotel with the high class restaurant. You can completly feel rustic atmosphere at our place.</p>
-			  		</div>
-			  	  <div class="clearfix"> </div>
-			  	</div>
-			  	<div class="col-md-4 hotel-info">
-			  		<div class="info-left">
-			  			<img src="images/s2.png" alt="">
-			  		</div>
-			  		<div class="info-right">
-			  			<h4>Services</h4>
-			  			<p>The hotel offers 24x7 room service with contemporary effficiency.</p>
-			  		</div>
-			  	  <div class="clearfix"> </div>
-			  	</div>
-			  	<div class="col-md-4 hotel-info">
-			  		<div class="info-left">
-			  			<img src="images/s4.png" alt="">
-			  		</div>
-			  		<div class="info-right">
-			  			<h4>Secure</h4>
-			  			<p>CCTV cameras surveillancing our whole premises.</p>
-			  		</div>
-			  	  <div class="clearfix"> </div>
-			  	</div>
-			  	<div class="clearfix"> </div>
-			  </div>
-			  <div class="information-grid wow slideInRight" data-wow-delay="0.3s">
-			  	<div class="col-md-4 hotel-info">
-			  		<div class="info-left">
-			  			<img src="images/s3.png" alt="">
-			  		</div>
-			  		<div class="info-right">
-			  			<h4>Food</h4>
-			  			<p>Hotel Bhavesh Farm has a wide selection of dining options to choose from, 24/7. Be it regional home-styled food, healthy 'active food' , we have something to suit every palate.</p>
-			  		</div>
-			  	  <div class="clearfix"> </div>
-			  	</div>
-			  	<div class="col-md-4 hotel-info">
-			  		<div class="info-left">
-			  			<img src="images/s5.png" alt="">
-			  		</div>
-			  		<div class="info-right">
-			  			<h4>Nearby Places</h4>
-			  			<p>There are many places like Devaliya national park, Somnath temple, Diu, Girnar at very short distance from our Hotel.</p>
-			  		</div>
+		<div class="services-man">
+			<div class="services-top">
+				<h1>Services</h1>				
+			</div>
+			<div class="services-bottom wow slideInLeft" data-wow-delay="0.3s">
+				<div class="col-md-4 services-grid">				
+					<div class="item item-type-move">
+						<div class="item-img">
+								<img src="images/s1.jpg" class="img-responsive" alt="">
+						</div>
+					</div>
 					<div class="clearfix"> </div>
-				</div>	
-			  	<div class="clearfix"> </div>
-			  </div>
+					<div class="ser-text">
+						<h4>Restaurant</h4>
+						<p>Hotel Bhavesh Farm has a wide selection of dining options to choose from, 24/7. Be it regional home-styled food, healthy 'active food', we have something to suit every palate.</p>
+					</div>
+				</div>
+				<div class="col-md-4 services-grid">				
+					<div class="item item-type-move">
+						<div class="item-img">
+								<img src="images/s2.jpg" class="img-responsive" alt="">
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="ser-text">
+						<h4>Rooms</h4>
+						<p>Equipped with smart, spacious rooms with well-appointed interiors, the hotel offers 24x7 room service with contemporary effficiency.</p>
+					</div>
+				</div>
+				<div class="col-md-4 services-grid">
+					<div class="item item-type-move">
+						<div class="item-img">
+								<img src="images/s3.jpg" class="img-responsive" alt="">
+						</div>
+					</div>
+					<div class="clearfix"> </div>
+					<div class="ser-text">
+						<h4>Wide Play Area</h4>
+						<p>There is a dedicated play area for children, with special equipment to enjoy swinging, climbing and sliding.</p>
+					</div>
+				</div>			
+			  <div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--services end here-->
+<!--services strip start here-->
+<div class="ser-strip">
+	<div class="container">
+		<div class="ser-strip-main wow rollIn" data-wow-delay="0.3s">
+			   <h2>Explore Sasan Gir with comfort</h2>
+			   <p>Unlike other Gir Sasan hotels, Hotel Bhavesh Farm is located close to the park, allowing you to marvel at natural landscapes by looking out of the window of your tent.</p>
 			<div class="clearfix"> </div>
 		</div>
 	</div>
 </div>
-<!--information end here-->
-<!--leaves start here-->
-<div class="leaves">
+<!--services strip end here-->
+<!--features strat here-->
+<div class="features">
 	<div class="container">
-		<div class="leaves-main wow zoomIn" data-wow-delay="0.3s">
-			<h1>You Never Leave Us</h1>
-			<h6>100% Satisfying services</h6>
-			<p>A jungle camp hotel offers you a concept living life style. Wild life living facility has basic facilities and not much luxury. Living amidst the wild life & in the interior of a jungle has its own limitations too! We love to offer you this real and practical living experience!.</p>
+		<div class="features-main">
+			<div class="features-top wow slideInLeft" data-wow-delay="0.3s">
+				<h3>Our Features</h3>
+				<br>
+				<br>
+				<ul>
+					<li> Restaurant is open until late night & early hours!
+					<li> We would plan your entire itenary for your stay.
+					<li> We arrange pick up & drop facility if you are travelling by air or rail.
+					<li> All rooms have AC & TV facilities.
+					<li> We arrange special arrangements for Senior Citizens.
+					<li> We arrange bird watching tours.
+					<li> Walking path all around the farm land !
+				</ul>
+			</div>
+			
 		</div>
 	</div>
 </div>
-<!--leaves end here-->
-<!--branches end here-->
-<div class="branch-text">
-   <div class="information-grid five-star wow slideInLeft">
-			<span class="quotations"> </span>
-			<p>Sasan Gir or The Gir Forest National Park and Wildlife Sanctuary is a shelter to numerous mammal and reptile species. By staying at our Hotel, you gain the opportunity to witness this incredible diversity of wildlife with your own eyes..</p>
-  </div>
-</div>
-<!--swiming-->
-<div class="swimming">
-	<div class="container">
-		<div class="swimming-main wow zoomIn" data-wow-delay="0.3s">
-			<div class="swimming-top">
-				<h3>Welcome</h3>
-			</div>
-			<div class="swimming-grid">
-					<h4>We recommend you to start with a jeep safari to watch and film the local wild fauna. Lion prides here are used to the presence of people, so you will be able to see them in detail from a close distance.</h4><br>
-					<h4>In addition to the safari, we offer tours to the majestic Somnath temple, the stunning Diu island, the calm and meditative place of Satadhar and other picturesque, ethnic locations. If you want your Gujarat experience to be complete, make sure to take at least one of these excursions.</h4>
-			</div>
-		</div>
-	</div>
-</div>
-<!--swimmg emd here-->
-<!--leaves end here-->
-<div class="branch-text">
-   <div class="information-grid five-star wow slideInRight">
-			<span class="quotations"> </span>
-			<p>Forests, lakes, and rivers, clouds and winds, stars and flowers, stupendous glaciers and crystal snowflakes - every form of animate or inanimate existence, leaves its impress upon the soul of man..</p>
-  </div>
-</div>
+
+<!--features end here-->
 <!--footer start here-->
 <div class="footer">
 	<div class="container">
